@@ -11,7 +11,7 @@ console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber=2;
-console.log(luckyNumber);
+console.log('luckynumber is:', luckyNumber);
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
 //     'My name is (full name), and I think (lucky number) is a winner!'.
@@ -22,7 +22,7 @@ console.log(introduction);
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
 let adventurous= true;
-console.log(adventurous);
+console.log('adventurous is:', adventurous);
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
 let food='pasta';
@@ -57,11 +57,14 @@ console.log(result);
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceroll= 'Try again later.';
-if(luckyNumber === 2 && adventurous){
-  diceroll='Roll the Dice!';
+let diceRoll = "Try again later."
+if (luckyNumber == 2 && adventurous == true){
+  diceRoll=("Roll the dice!");
 }
-console.log('diceroll is:', diceroll);
+  else{
+    diceRoll=("Try again later.");
+    }
+    console.log(diceRoll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
