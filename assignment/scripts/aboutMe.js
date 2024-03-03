@@ -10,7 +10,7 @@ let fullName = firstName  + ' ' + lastName;
 console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber=3;
+let luckyNumber=2;
 console.log(luckyNumber);
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -29,7 +29,7 @@ let food='pasta';
 console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets=1;
+let pets=2;
 console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets=3;
@@ -38,7 +38,7 @@ console.log(friendsPets);
 pets+=2;
 console.log(pets);
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets=6;
+let allowedPets=10;
 console.log(allowedPets);
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
@@ -57,7 +57,11 @@ console.log(result);
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-
+let diceroll= 'Try again later.';
+if(luckyNumber === 2 && adventurous){
+  diceroll='Roll the Dice!';
+}
+console.log('diceroll is:', diceroll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
@@ -66,8 +70,17 @@ console.log(result);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-
-
+let petStatus
+if(pets < allowedPets){
+petStatus='I can have more pets';
+}
+else if(pets === allowedPets){
+petstatus='I have enough pets';
+}
+else if(pets > allowedPets){
+petstatus='Oh no, I have too many pets!';
+}
+console.log(petStatus);
 // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
@@ -112,8 +125,8 @@ try {
     friendsPets: typeof friendsPets !== 'undefined' ? friendsPets : undefined,
     allowedPets: typeof allowedPets !== 'undefined' ? allowedPets : undefined,
     result: typeof result !== 'undefined' ? result : undefined,
-    diceRoll: typeof diceRoll !== 'undefined' ? diceRoll : undefined,
-    petStatus: typeof petStatus !== 'undefined' ? petStatus : undefined,
+    diceRoll: typeof diceroll !== 'undefined' ? diceroll : undefined,
+    petStatus: typeof petstatus !== 'undefined' ? petstatus : undefined,
     mostPets: typeof mostPets !== 'undefined' ? mostPets : undefined,
     luckyResult: typeof luckyResult !== 'undefined' ? luckyResult : undefined,
   };
