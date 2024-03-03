@@ -30,7 +30,8 @@ else{
 }
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
-
+let food='pasta';
+console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 
@@ -100,7 +101,7 @@ try {
     luckyNumber: typeof luckyNumber !== 'undefined' ? luckyNumber : undefined,
     introduction: typeof introduction !== 'undefined' ? introduction : undefined,
     adventurous: typeof adventurous !== 'undefined' ? adventurous : undefined,
-    food: typeof food !== 'undefined' ? food : undefined,
+    food: typeof pasta !== 'undefined' ? pasta : undefined,
     pets: typeof pets !== 'undefined' ? pets : undefined,
     friendsPets: typeof friendsPets !== 'undefined' ? friendsPets : undefined,
     allowedPets: typeof allowedPets !== 'undefined' ? allowedPets : undefined,
