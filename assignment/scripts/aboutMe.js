@@ -7,7 +7,7 @@ let lastName = 'Hassan';
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = firstName  + ' ' + lastName;
-console.log('fullName');
+console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber=3;
@@ -37,7 +37,8 @@ console.log(food);
 let pets=1;
 console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-
+let friendsPets=3;
+console.log(friendsPets);
 // 10 - Add two pets to your `pets` variable
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
